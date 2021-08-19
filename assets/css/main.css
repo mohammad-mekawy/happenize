@@ -37,12 +37,26 @@ animation: showUp 1s ease-in;
 }
 .hero .offcanvas-start{
     width: 100%;
+    background-image:linear-gradient(270deg ,#26011F , #600060); ;
 }
+.hero .offcanvas-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hero .offcanvas-header .btn-close{
+   background: transparent;
+}
+
 @keyframes rotate{
     0%{transform: rotate(0);}
     100%{transform: rotate(360deg);}
 }
-.hero .btn-close:hover{
+.hero .close-icon{
+    top: 20px;
+    right: 20px;
+}
+.hero .close-icon:hover{
     animation: rotate 1s;
 }
 .hero .btn-close:focus{
@@ -63,12 +77,22 @@ animation: showUp 1s ease-in;
     font-size: 18px;
     line-height: 27px;
 }
-.hero .owl-carousel .k-slider{
+.hero .owl-carousel .k-slider1,.hero .owl-carousel .k-slider2,.hero .owl-carousel .k-slider3{
     background-image: linear-gradient(
         270deg
         ,#26011F , #600060);
         padding-top: 70px;
         padding-bottom: 140px;
+}
+.hero .owl-carousel .k-slider2{
+    background-image: linear-gradient(
+        270deg
+        ,#071B3E , #4285F4);
+}
+.hero .owl-carousel .k-slider3{
+    background-image: linear-gradient(
+        270deg
+        ,#39C55E , #09551E);
 }
 .hero .owl-carousel .owl-dots{
     transform: translateY(-132px);
@@ -85,21 +109,21 @@ animation: showUp 1s ease-in;
     font-size: 16px;
 }
 .hero .owl-dots::after{
-    content: "04";
+    content: "03";
     margin-left: 20px;
 }
 .hero .owl-carousel button.owl-dot:first-child.active{
-    background: #FD5C63;
+    background: #26011F;
 }
 .hero .owl-carousel button.owl-dot:nth-child(2).active{
     background: #4285F4;
 }
 .hero .owl-carousel button.owl-dot:nth-child(3).active{
-    background: #FFBB00;
+    background: #39C55E;
 }
-.hero .owl-carousel button.owl-dot:nth-child(4).active{
+/* .hero .owl-carousel button.owl-dot:nth-child(4).active{
     background: #34A853;
-}
+} */
 .hero .k-social{
     position: absolute;
     z-index: 9;
