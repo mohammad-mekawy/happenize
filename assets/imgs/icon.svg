@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="icon" transform="translate(1 1)">
+    <circle id="Oval" cx="35" cy="35" r="35" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Triangle" d="M7.1.533a.5.5,0,0,1,.8,0L14.4,9.2a.5.5,0,0,1-.4.8H1a.5.5,0,0,1-.4-.8Z" transform="translate(39.5 27.5) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

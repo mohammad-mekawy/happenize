@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.238" height="21.299" viewBox="0 0 21.238 21.299">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+    </style>
+  </defs>
+  <path id="Path" class="cls-1" d="M15,5.469H3.563l5.25-4.375L7.5,0,0,6.25,7.5,12.5l1.313-1.094L3.563,7.031H15Z" transform="matrix(-0.695, 0.719, -0.719, -0.695, 20.227, 9.697)"/>
+</svg>
