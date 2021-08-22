@@ -36,4 +36,11 @@ class Bubble {
 }
 noise.seed(Math.floor(64e3 * Math.random()));
 const bubbles = new Bubbles(bubbleSpecs);
+
+$(".menu-btn").click(function(){
+    $('.menu-hover-fill li').addClass("transition-in")
+})
+$(".btn-close").click(function(){
+    $('.menu-hover-fill li').removeClass('transition-in')
+})
   });
