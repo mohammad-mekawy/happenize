@@ -6,10 +6,43 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 @keyframes ripple{
-    70%{box-shadow:0 0 0 70px rgba(244,68,56,0)}
+    50%{box-shadow:0 0 0 40px rgba(244,68,56,0)}
     to{box-shadow:0 0 0 0 rgba(244,68,56,0)}
 }
-
+ 
+@keyframes rotate{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+.k-ripple{
+    box-shadow: 0 0 0 0 hsl(0deg 0% 61% / 35%);
+    animation: ripple 3s infinite;
+}
+@keyframes float-subpixel {
+    from {
+      transform: rotate(-0.001deg) translate3d(5px, 0, 0) rotate(-0.001deg);
+    }
+    to {
+      transform: rotate(360.001deg) translate3d(5px, 0, 0) rotate(-360.001deg);
+    }
+  }
+.k-float{
+    animation: float-subpixel 5s infinite linear;
+}
+.line-after-start::after,.line-after-center::after{
+    content: "";
+    background-image: url(../imgs/titleLine.png);
+    background-position: center center;
+    background-size: cover;
+    height: 5px;
+    width: 0px;
+    display: block;
+    transition: .5s;
+    margin: auto;
+}
+.line-after-start:hover::after,.line-after-center:hover::after{
+    width: 100%;
+}
 /* hero start */
 .hero .k-nav{
     position: absolute;
@@ -21,27 +54,35 @@ body{
     border: 0;
     padding-left: 10px;
 }
-
 .hero .k-search{
+    background: transparent;
+    border: 0px 0xp 1px 0px;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    border-radius: 0 !important;
+    color: #fff;
+    width: 0px;
+    transition: 1s;
     opacity: 0;
 }
-/* @keyframes showUp{
-    0%{transform:translateY(200px);}
-    100%{transform: translateY(0);}
+.hero .k-search:focus{
+    outline: 0px;
 }
-.search-box{
-    overflow: hidden;
-}
-.hero .k-search{
- transform: translateY(200px);
- transform: 5s;
-} */
 .hero .search-box:hover .k-search{
-animation: showUp 1s ease-in;
+    width: 200px;
+    opacity: 1;
+}
+@media(max-width:768px){
+    .hero .search-box:hover .k-search{
+        width: 100px;
+    }
 }
 .hero .offcanvas-start{
     width: 100%;
-    background-image:linear-gradient(270deg ,#26011F , #600060); ;
+    background-color: #000;
+}
+.hero .offcanvas-body .container{
+    height: 100vh;
 }
 .hero .offcanvas-header{
     position: absolute;
@@ -49,23 +90,32 @@ animation: showUp 1s ease-in;
     right: 0;
 }
 .hero .offcanvas-header .btn-close{
-   background: transparent;
-}
-
-@keyframes rotate{
-    0%{transform: rotate(0);}
-    100%{transform: rotate(360deg);}
-}
-.hero .close-icon{
-    top: 20px;
-    right: 20px;
-}
-.hero .close-icon:hover{
-    animation: rotate 1s;
-}
-.hero .btn-close:focus{
-    box-shadow:0 0 0 0
-}
+    background: transparent;
+ }
+ .hero .close-icon{
+     top: 20px;
+     right: 20px;
+ }
+ .hero .close-icon:hover{
+     animation: rotate 1s;
+ }
+ .hero .btn-close:focus{
+     box-shadow:0 0 0 0
+ }
+ .hero .question{
+     color: greenyellow;
+ }
+ .hero .rounded-pill{
+     transition: .5s;
+ }
+ .hero .TOS-PP a{
+     color: #7f8c8d;
+     text-decoration: none;
+     transition: .5s;
+ }
+ .hero .TOS-PP a:hover{
+     color: #fff;
+ }
 .hero .services{
     letter-spacing: 1px;
     line-height: 16px;
@@ -131,8 +181,30 @@ animation: showUp 1s ease-in;
 .hero .k-social{
     position: absolute;
     z-index: 9;
-    right: 35px;
-    top: 230px;
+    right: 25px;
+    top: 50%;
+}
+.hero .k-social-top::after{
+    content: "";
+    height: 75px;
+    width: 2px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(-2px);
+}
+@keyframes lineAnmi{
+    0%{height: 0;}
+    50%{height: 150px;}
+    100%{height: 0;}
+}
+.hero .k-social-top::after{
+    animation: lineAnmi 4s linear infinite ;
+}
+.hero .offcanvas-body .k-social{
+    position: static;
 }
 .k-social img{
     transition: all .5s;
@@ -183,8 +255,18 @@ animation: showUp 1s ease-in;
     font-size: 18px;
     line-height: 22px;
     padding: 13px 50px;
-    border: 0;
+    border: 2px solid transparent;
     width: fit-content;
+    transition: all .5s;
+}
+.about-us .btn-primary:hover, .our-clients .btn-primary:hover,.awards .btn-light:hover,.blog .btn-primary:hover{
+    background-color: transparent;
+    border: 2px solid #6B1D58;
+    color: #6B1D58;
+}
+.awards .btn-light:hover{
+    color: #fff;
+    border: 2px solid #fff;
 }
 .btn-primary:focus,.btn-light:focus{
     box-shadow: 0 0 0 0;
@@ -221,6 +303,7 @@ animation: showUp 1s ease-in;
     border-radius: 5px;
     transition: .5s ease-in-out;
     padding-top: 113px;
+    margin-bottom: 90px;
 }
 @media(min-width:992px){
     .our-services .service{
@@ -245,12 +328,13 @@ animation: showUp 1s ease-in;
     opacity: 1;
     transform: translateY(-10px);
 }
+.our-services .services-squares{
+    bottom: -45px;
+    left: 130px;
+}
 /* our services end */
 
 /* case start */
-.case-study{
-    padding-top: 90px;
-}
 .case-study .text-black {
 text-decoration: none;
 font-size: 18px;
@@ -326,9 +410,9 @@ width: 100%;
     content: "0" counters(section, ".") ". ";
     counter-increment: section;
 }
-.play-icon{
-    box-shadow: 0 0 0 0 hsl(0deg 0% 100% / 35%);
-    animation: ripple 3s infinite;;
+.choose-us .squares3{
+    bottom: -36px;
+    left: -75px;
 }
 /* choose us end */
 
@@ -375,7 +459,11 @@ line-height: 38px;
 
 /* clients start */
 .bubble-wrap{overflow:hidden;height:600px;margin:-80px 0 0 0}
-.bubbles{position:relative;background:salmon}.bubble{position:absolute;width:172px;height:172px;border-radius:50%;box-shadow:0 15px 35px rgba(0,0,0,.1),0 3px 10px rgba(0,0,0,.1);cursor:pointer;background-size:contain;background-position:center}.no-webp .logo1{background-image:url(../imgs/Customers-logo/1.png)}.webp .logo1{background-image:url(../imgs/Customers-logo/1.webp)}.no-webp .logo2{background-image:url(../imgs/Customers-logo/2.png)}.webp .logo2{background-image:url(../imgs/Customers-logo/2.webp)}.no-webp .logo3{background-image:url(../imgs/Customers-logo/3.png)}.webp .logo3{background-image:url(../imgs/Customers-logo/3.webp)}.no-webp .logo4{background-image:url(../imgs/Customers-logo/4.png)}.webp .logo4{background-image:url(../imgs/Customers-logo/4.webp)}.no-webp .logo5{background-image:url(../imgs/Customers-logo/5.png)}.webp .logo5{background-image:url(../imgs/Customers-logo/5.webp)}.no-webp .logo6{background-image:url(../imgs/Customers-logo/6.png)}.webp .logo6{background-image:url(../imgs/Customers-logo/6.webp)}.no-webp .logo7{background-image:url(../imgs/Customers-logo/7.png)}.webp .logo7{background-image:url(../imgs/Customers-logo/7.webp)}.no-webp .logo8{background-image:url(../imgs/Customers-logo/8.png)}.webp .logo8{background-image:url(../imgs/Customers-logo/8.webp)}.no-webp .logo9{background-image:url(../imgs/Customers-logo/9.png)}.webp .logo9{background-image:url(../imgs/Customers-logo/9.webp)}.no-webp .logo10{background-image:url(../imgs/Customers-logo/10.png)}.webp .logo10{background-image:url(../imgs/Customers-logo/10.webp)}.no-webp .logo11{background-image:url(../imgs/Customers-logo/11.png)}.webp .logo11{background-image:url(../imgs/Customers-logo/11.webp)}.no-webp .logo12{background-image:url(../imgs/Customers-logo/40.png)}.webp .logo12{background-image:url(../imgs/Customers-logo/40.webp)}.no-webp .logo13{background-image:url(../imgs/Customers-logo/13.png)}.webp .logo13{background-image:url(../imgs/Customers-logo/13.webp)}.no-webp .logo14{background-image:url(../imgs/Customers-logo/14.png)}.webp .logo14{background-image:url(../imgs/Customers-logo/14.webp)}.no-webp .logo15{background-image:url(../imgs/Customers-logo/15.png)}.webp .logo15{background-image:url(../imgs/Customers-logo/15.webp)}.no-webp .logo16{background-image:url(../imgs/Customers-logo/16.png)}.webp .logo16{background-image:url(../imgs/Customers-logo/16.webp)}.no-webp .logo17{background-image:url(../imgs/Customers-logo/17.png)}.webp .logo17{background-image:url(../imgs/Customers-logo/17.webp)}.no-webp .logo18{background-image:url(../imgs/Customers-logo/18.png)}.webp .logo18{background-image:url(../imgs/Customers-logo/18.webp)}.no-webp .logo19{background-image:url(../imgs/Customers-logo/19.png)}.webp .logo19{background-image:url(../imgs/Customers-logo/19.webp)}.no-webp .logo20{background-image:url(../imgs/Customers-logo/20.png)}.webp .logo20{background-image:url(../imgs/Customers-logo/20.webp)}.no-webp .logo21{background-image:url(../imgs/Customers-logo/21.png)}.webp .logo21{background-image:url(../imgs/Customers-logo/21.webp)}.no-webp .logo22{background-image:url(../imgs/Customers-logo/45.png)}.webp .logo22{background-image:url(../imgs/Customers-logo/45.webp)}.no-webp .logo23{background-image:url(../imgs/Customers-logo/23.png)}.webp .logo23{background-image:url(../imgs/Customers-logo/23.webp)}.no-webp .logo24{background-image:url(../imgs/Customers-logo/24.png)}.webp .logo24{background-image:url(../imgs/Customers-logo/24.webp)}.no-webp .logo25{background-image:url(../imgs/Customers-logo/25.png)}.webp .logo25{background-image:url(../imgs/Customers-logo/25.webp)}.no-webp .logo26{background-image:url(../imgs/Customers-logo/26.png)}.webp .logo26{background-image:url(../imgs/Customers-logo/26.webp)}.no-webp .logo27{background-image:url(../imgs/Customers-logo/27.png)}.webp .logo27{background-image:url(../imgs/Customers-logo/27.webp)}.no-webp .logo28{background-image:url(../imgs/Customers-logo/28.png)}.webp .logo28{background-image:url(../imgs/Customers-logo/28.webp)}.no-webp .logo29{background-image:url(../imgs/Customers-logo/44.png)}.webp .logo29{background-image:url(../imgs/Customers-logo/44.webp)}.no-webp .logo30{background-image:url(../imgs/Customers-logo/30.png)}.webp .logo30{background-image:url(../imgs/Customers-logo/30.webp)}.no-webp .logo31{background-image:url(../imgs/Customers-logo/31.png)}.webp .logo31{background-image:url(../imgs/Customers-logo/31.webp)}.no-webp .logo32{background-image:url(../imgs/Customers-logo/32.png)}.webp .logo32{background-image:url(../imgs/Customers-logo/32.webp)}.logo10:hover::before,.logo11:hover::before,.logo12:hover::before,.logo13:hover::before,.logo14:hover::before,.logo15:hover::before,.logo16:hover::before,.logo17:hover::before,.logo18:hover::before,.logo19:hover::before,.logo1:hover::before,.logo20:hover::before,.logo21:hover::before,.logo22:hover::before,.logo23:hover::before,.logo24:hover::before,.logo25:hover::before,.logo26:hover::before,.logo27:hover::before,.logo28:hover::before,.logo29:hover::before,.logo2:hover::before,.logo30:hover::before,.logo31:hover::before,.logo32:hover::before,.logo3:hover::before,.logo4:hover::before,.logo5:hover::before,.logo6:hover::before,.logo7:hover::before,.logo8:hover::before,.logo9:hover::before{bottom:0;visibility:visible}.logo10:hover::after,.logo11:hover::after,.logo12:hover::after,.logo13:hover::after,.logo14:hover::after,.logo15:hover::after,.logo16:hover::after,.logo17:hover::after,.logo18:hover::after,.logo19:hover::after,.logo1:hover::after,.logo20:hover::after,.logo21:hover::after,.logo22:hover::after,.logo23:hover::after,.logo24:hover::after,.logo25:hover::after,.logo26:hover::after,.logo27:hover::after,.logo28:hover::after,.logo29:hover::after,.logo2:hover::after,.logo30:hover::after,.logo31:hover::after,.logo32:hover::after,.logo3:hover::after,.logo4:hover::after,.logo5:hover::after,.logo6:hover::after,.logo7:hover::after,.logo8:hover::after,.logo9:hover::after{bottom:-36px;visibility:visible}.logo10:before,.logo11:before,.logo12:before,.logo13:before,.logo14:before,.logo15:before,.logo16:before,.logo17:before,.logo18:before,.logo19:before,.logo1:before,.logo20:before,.logo21:before,.logo22:before,.logo23:before,.logo24:before,.logo25:before,.logo26:before,.logo27:before,.logo28:before,.logo29:before,.logo2:before,.logo30:before,.logo31:before,.logo32:before,.logo3:before,.logo4:before,.logo5:before,.logo6:before,.logo7:before,.logo8:before,.logo9:before{content:"";display:block;position:absolute;bottom:-40px;width:0;height:0;border-style:solid;border-width:0 15px 20px;border-color:transparent transparent #fd5c6385;z-index:9;left:0;right:0;margin:0 auto;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;visibility:hidden}.logo10:after,.logo11:after,.logo12:after,.logo13:after,.logo14:after,.logo15:after,.logo16:after,.logo17:after,.logo18:after,.logo19:after,.logo1:after,.logo20:after,.logo21:after,.logo22:after,.logo23:after,.logo24:after,.logo25:after,.logo26:after,.logo27:after,.logo28:after,.logo29:after,.logo2:after,.logo30:after,.logo31:after,.logo32:after,.logo3:after,.logo4:after,.logo5:after,.logo6:after,.logo7:after,.logo8:after,.logo9:after{content:"Sajaya";color:#fff;display:block;position:absolute;bottom:-85px;left:0;right:0;margin:0 auto;width:73%;text-align:center;background:#fd5c63;height:39px;font-size:20px;padding:10px;border-radius:50px;-webkit-box-shadow:0 0 10px 3px #dbdbdb;box-shadow:0 0 10px 3px #68689f;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;visibility:hidden}.logo2:after{content:"DUBAI WORLD TRADE CENTER";width:110%;height:55px}.logo3:after{content:"DP WORLD";width:95%;height:39px}.logo4:after{content:"HAMRIYAH FREE ZONE";width:95%;height:55px}.logo5:after{content:"YVOLV";width:55%;height:18px}.logo6:after{content:"BEST MED OPINION";width:110%;height:39px}.logo7:after{content:"GARGASH HOSPITAL";width:110%;height:39px}.logo8:after{content:"Allied Medical Center";width:95%;height:55px}.logo9:after{content:"TARABICHI";width:65%;height:18px}.logo10:after{content:"Sambucol";width:75%;height:18px}.logo11:after{content:"DUBAI SKY CLINIC";width:100%;height:55px}.logo12:after{content:"RAWABINA";width:75%;height:40px}.logo13:after{content:"healthigo";width:85%;height:40px}.logo14:after{content:"Hub of Consciousness";width:95%;height:55px}.logo15:after{content:"yogalife";width:85%;height:40px}.logo16:after{content:"ARENCO";width:75%;height:40px}.logo17:after{content:"Bawabat AlSharq";width:100%;height:39px}.logo18:after{content:"Al Ghurair";width:73%;height:39px}.logo19:after{content:"Baniyas";width:73%;height:39px}.logo20:after{content:"Art of Living";width:90%;height:39px}.logo21:after{content:"Al Burj";width:73%;height:39px}.logo22:after{content:"oporto";width:65%;height:40px}.logo23:after{content:"McARTHUR";width:75%;height:40px}.logo24:after{content:"WESTEND";width:75%;height:40px}.logo25:after{content:"FOREST";width:75%;height:40px}.logo26:after{content:"THE private LABEL";width:95%;height:39px}.logo27:after{content:"La Secret";width:85%;height:40px}.logo28:after{content:"Cartier";width:75%;height:40px}.logo29:after,.logo30:after,.logo31:after,.logo32:after{content:"DOH";width:55%;height:40px}.logo30:after{content:"ODEEM"}.logo31:after{content:"ELILHAAM"}.logo32:after{content:"ZANMODA"}
+.bubbles{position:relative;background:salmon}.bubble{position:absolute;width:172px;height:172px;border-radius:50%;box-shadow:0 15px 35px rgba(0,0,0,.1),0 3px 10px rgba(0,0,0,.1);cursor:pointer;background-size:contain;background-position:center}.no-webp .logo1{background-image:url(../imgs/Customers-logo/1.png)}.webp .logo1{background-image:url(../imgs/Customers-logo/1.webp)}.no-webp .logo2{background-image:url(../imgs/Customers-logo/2.png)}.webp .logo2{background-image:url(../imgs/Customers-logo/2.webp)}.no-webp .logo3{background-image:url(../imgs/Customers-logo/3.png)}.webp .logo3{background-image:url(../imgs/Customers-logo/3.webp)}.no-webp .logo4{background-image:url(../imgs/Customers-logo/4.png)}.webp .logo4{background-image:url(../imgs/Customers-logo/4.webp)}.no-webp .logo5{background-image:url(../imgs/Customers-logo/5.png)}.webp .logo5{background-image:url(../imgs/Customers-logo/5.webp)}.no-webp .logo6{background-image:url(../imgs/Customers-logo/6.png)}.webp .logo6{background-image:url(../imgs/Customers-logo/6.webp)}.no-webp .logo7{background-image:url(../imgs/Customers-logo/7.png)}.webp .logo7{background-image:url(../imgs/Customers-logo/7.webp)}.no-webp .logo8{background-image:url(../imgs/Customers-logo/8.png)}.webp .logo8{background-image:url(../imgs/Customers-logo/8.webp)}.no-webp .logo9{background-image:url(../imgs/Customers-logo/9.png)}.webp .logo9{background-image:url(../imgs/Customers-logo/9.webp)}.no-webp .logo10{background-image:url(../imgs/Customers-logo/10.png)}.webp .logo10{background-image:url(../imgs/Customers-logo/10.webp)}.no-webp .logo11{background-image:url(../imgs/Customers-logo/11.png)}.webp .logo11{background-image:url(../imgs/Customers-logo/11.webp)}.no-webp .logo12{background-image:url(../imgs/Customers-logo/40.png)}.webp .logo12{background-image:url(../imgs/Customers-logo/40.webp)}.no-webp .logo13{background-image:url(../imgs/Customers-logo/13.png)}.webp .logo13{background-image:url(../imgs/Customers-logo/13.webp)}.no-webp .logo14{background-image:url(../imgs/Customers-logo/14.png)}.webp .logo14{background-image:url(../imgs/Customers-logo/14.webp)}.no-webp .logo15{background-image:url(../imgs/Customers-logo/15.png)}.webp .logo15{background-image:url(../imgs/Customers-logo/15.webp)}.no-webp .logo16{background-image:url(../imgs/Customers-logo/16.png)}.webp .logo16{background-image:url(../imgs/Customers-logo/16.webp)}.no-webp .logo17{background-image:url(../imgs/Customers-logo/17.png)}.webp .logo17{background-image:url(../imgs/Customers-logo/17.webp)}.no-webp .logo18{background-image:url(../imgs/Customers-logo/18.png)}.webp .logo18{background-image:url(../imgs/Customers-logo/18.webp)}.no-webp .logo19{background-image:url(../imgs/Customers-logo/19.png)}.webp .logo19{background-image:url(../imgs/Customers-logo/19.webp)}.no-webp .logo20{background-image:url(../imgs/Customers-logo/20.png)}.webp .logo20{background-image:url(../imgs/Customers-logo/20.webp)}.no-webp .logo21{background-image:url(../imgs/Customers-logo/21.png)}.webp .logo21{background-image:url(../imgs/Customers-logo/21.webp)}.no-webp .logo22{background-image:url(../imgs/Customers-logo/45.png)}.webp .logo22{background-image:url(../imgs/Customers-logo/45.webp)}.no-webp .logo23{background-image:url(../imgs/Customers-logo/23.png)}.webp .logo23{background-image:url(../imgs/Customers-logo/23.webp)}.no-webp .logo24{background-image:url(../imgs/Customers-logo/24.png)}.webp .logo24{background-image:url(../imgs/Customers-logo/24.webp)}.no-webp .logo25{background-image:url(../imgs/Customers-logo/25.png)}.webp .logo25{background-image:url(../imgs/Customers-logo/25.webp)}.no-webp .logo26{background-image:url(../imgs/Customers-logo/26.png)}.webp .logo26{background-image:url(../imgs/Customers-logo/26.webp)}.no-webp .logo27{background-image:url(../imgs/Customers-logo/27.png)}.webp .logo27{background-image:url(../imgs/Customers-logo/27.webp)}.no-webp .logo28{background-image:url(../imgs/Customers-logo/28.png)}.webp .logo28{background-image:url(../imgs/Customers-logo/28.webp)}.no-webp .logo29{background-image:url(../imgs/Customers-logo/44.png)}.webp .logo29{background-image:url(../imgs/Customers-logo/44.webp)}.no-webp .logo30{background-image:url(../imgs/Customers-logo/30.png)}.webp .logo30{background-image:url(../imgs/Customers-logo/30.webp)}.no-webp .logo31{background-image:url(../imgs/Customers-logo/31.png)}.webp .logo31{background-image:url(../imgs/Customers-logo/31.webp)}.no-webp .logo32{background-image:url(../imgs/Customers-logo/32.png)}.webp .logo32{background-image:url(../imgs/Customers-logo/32.webp)}.logo10:hover::before,.logo11:hover::before,.logo12:hover::before,.logo13:hover::before,.logo14:hover::before,.logo15:hover::before,.logo16:hover::before,.logo17:hover::before,.logo18:hover::before,.logo19:hover::before,.logo1:hover::before,.logo20:hover::before,.logo21:hover::before,.logo22:hover::before,.logo23:hover::before,.logo24:hover::before,.logo25:hover::before,.logo26:hover::before,.logo27:hover::before,.logo28:hover::before,.logo29:hover::before,.logo2:hover::before,.logo30:hover::before,.logo31:hover::before,.logo32:hover::before,.logo3:hover::before,.logo4:hover::before,.logo5:hover::before,.logo6:hover::before,.logo7:hover::before,.logo8:hover::before,.logo9:hover::before{bottom:0;visibility:visible}.logo10:hover::after,.logo11:hover::after,.logo12:hover::after,.logo13:hover::after,.logo14:hover::after,.logo15:hover::after,.logo16:hover::after,.logo17:hover::after,.logo18:hover::after,.logo19:hover::after,.logo1:hover::after,.logo20:hover::after,.logo21:hover::after,.logo22:hover::after,.logo23:hover::after,.logo24:hover::after,.logo25:hover::after,.logo26:hover::after,.logo27:hover::after,.logo28:hover::after,.logo29:hover::after,.logo2:hover::after,.logo30:hover::after,.logo31:hover::after,.logo32:hover::after,.logo3:hover::after,.logo4:hover::after,.logo5:hover::after,.logo6:hover::after,.logo7:hover::after,.logo8:hover::after,.logo9:hover::after{bottom:-36px;visibility:visible}.logo10:before,.logo11:before,.logo12:before,.logo13:before,.logo14:before,.logo15:before,.logo16:before,.logo17:before,.logo18:before,.logo19:before,.logo1:before,.logo20:before,.logo21:before,.logo22:before,.logo23:before,.logo24:before,.logo25:before,.logo26:before,.logo27:before,.logo28:before,.logo29:before,.logo2:before,.logo30:before,.logo31:before,.logo32:before,.logo3:before,.logo4:before,.logo5:before,.logo6:before,.logo7:before,.logo8:before,.logo9:before{content:"";display:block;position:absolute;bottom:-40px;width:0;height:0;border-style:solid;border-width:0 15px 20px;border-color:transparent transparent #fd5c6385;z-index:9;left:0;right:0;margin:0 auto;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;visibility:hidden}.logo10:after,.logo11:after,.logo12:after,.logo13:after,.logo14:after,.logo15:after,.logo16:after,.logo17:after,.logo18:after,.logo19:after,.logo1:after,.logo20:after,.logo21:after,.logo22:after,.logo23:after,.logo24:after,.logo25:after,.logo26:after,.logo27:after,.logo28:after,.logo29:after,.logo2:after,.logo30:after,.logo31:after,.logo32:after,.logo3:after,.logo4:after,.logo5:after,.logo6:after,.logo7:after,.logo8:after,.logo9:after{content:"Sajaya";color:#fff;display:block;position:absolute;bottom:-85px;left:0;right:0;margin:0 auto;width:73%;text-align:center;background:#fd5c63;height:39px;font-size:14px;padding:10px;border-radius:50px;-webkit-box-shadow:0 0 10px 3px #dbdbdb;box-shadow:0 0 10px 3px #68689f;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;visibility:hidden}.logo2:after{content:"DUBAI WORLD TRADE CENTER";width:110%;height:55px}.logo3:after{content:"DP WORLD";width:95%;height:39px}.logo4:after{content:"HAMRIYAH FREE ZONE";width:95%;height:55px}.logo5:after{content:"YVOLV";width:55%;height:40px}.logo6:after{content:"BEST MED OPINION";width:110%;height:39px}.logo7:after{content:"GARGASH HOSPITAL";width:110%;height:39px}.logo8:after{content:"Allied Medical Center";width:95%;height:55px}.logo9:after{content:"TARABICHI";width:65%;height:40px}.logo10:after{content:"Sambucol";width:75%;height:40px}.logo11:after{content:"DUBAI SKY CLINIC";width:100%;height:55px}.logo12:after{content:"RAWABINA";width:75%;height:40px}.logo13:after{content:"healthigo";width:85%;height:40px}.logo14:after{content:"Hub of Consciousness";width:95%;height:55px}.logo15:after{content:"yogalife";width:85%;height:40px}.logo16:after{content:"ARENCO";width:75%;height:40px}.logo17:after{content:"Bawabat AlSharq";width:100%;height:39px}.logo18:after{content:"Al Ghurair";width:73%;height:39px}.logo19:after{content:"Baniyas";width:73%;height:39px}.logo20:after{content:"Art of Living";width:90%;height:39px}.logo21:after{content:"Al Burj";width:73%;height:39px}.logo22:after{content:"oporto";width:65%;height:40px}.logo23:after{content:"McARTHUR";width:75%;height:40px}.logo24:after{content:"WESTEND";width:75%;height:40px}.logo25:after{content:"FOREST";width:75%;height:40px}.logo26:after{content:"THE private LABEL";width:95%;height:39px}.logo27:after{content:"La Secret";width:85%;height:40px}.logo28:after{content:"Cartier";width:75%;height:40px}.logo29:after,.logo30:after,.logo31:after,.logo32:after{content:"DOH";width:80%;height:40px}.logo30:after{content:"ODEEM"}.logo31:after{content:"ELILHAAM"}.logo32:after{content:"ZANMODA"}
+.our-clients .squares4{
+    right: 90px;
+    bottom: 25px;
+}
 /* clients end */
 
 /* awards start */
@@ -501,6 +589,12 @@ footer{
 footer .f-con{
     padding-top: 45px;
 }
+footer .address, footer .address a{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
 footer .title{
     font-size: 18px;
     line-height: 22px;
@@ -508,11 +602,25 @@ footer .title{
     margin-bottom: 45px;
     margin-top: 18px;
 }
+footer .f-links li{
+    width: fit-content;
+}
 footer a{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     line-height: 45px;
+}
+footer .f-links a::after{
+    content: "";
+    background:#fff;
+    height: 2px;
+    width: 0px;
+    display: block;
+    transition: .5s;
+}
+footer .f-links a:hover::after{
+    width: 100%;
 }
 footer a:hover{
     color: #fff;
