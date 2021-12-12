@@ -1,262 +1,407 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
 
     <title>Happenize</title>
   </head>
   <body>
-
     <!-- hero start -->
     <section class="hero position-relative">
-          <div class="k-nav">
-            <div class="colored-line d-flex col-12">
-              <img src="assets/imgs/colored-line.jpg" alt="line" width="100%">
+      <div class="k-nav">
+        <div class="colored-line d-flex col-12">
+          <img src="assets/imgs/colored-line.jpg" alt="line" width="100%" />
+        </div>
+        <div class="container">
+          <div class="row align-items-center pt-3">
+            <div class="col-6">
+              <img src="assets/imgs/logo.png" alt="" class="logo img-fluid" />
             </div>
-          <div class="container">
-            <div class="row align-items-center pt-3">
-              <div class="col-6">
-                <img src="assets/imgs/logo.png" alt="" class="logo img-fluid">
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <div class="search-box">
-                  <form action="#" class="input-group">
-                    <input type="search" class="k-search" aria-label="Search"
-                    aria-describedby="search-addon" />
+            <div class="col-6 d-flex justify-content-end align-items-center">
+              <div class="search-box">
+                <form action="#" class="input-group">
+                  <input
+                    type="search"
+                    class="k-search"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
                   <button class="k-btn">
                     <i class="bi bi-search text-white me-3"></i>
                   </button>
-                  </form>
+                </form>
+              </div>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+                class="menu-btn"
+              >
+                <img src="assets/imgs/menu_icon.png" alt="menu icon" />
+              </a>
+              <!-- menu start -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+              >
+                <div class="offcanvas-header justify-content-end">
+                  <button
+                    type="button"
+                    class="btn-close text-light"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  >
+                    <img
+                      src="assets/imgs/close.svg"
+                      alt="close"
+                      class="position-absolute close-icon"
+                    />
+                  </button>
                 </div>
-                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" class="menu-btn">
-                  <img src="assets/imgs/menu_icon.png" alt="menu icon">
-                </a>
-                  <!-- menu start -->
-                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"  aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-header justify-content-end">
-                          <button type="button" class="btn-close text-light" data-bs-dismiss="offcanvas" aria-label="Close">
-                            <img src="assets/imgs/close.svg" alt="close" class="position-absolute close-icon">
-                          </button>
-                        </div>
-                        <div class="offcanvas-body p-0 text-white">
-                          <div class="container d-flex flex-column justify-content-between">
-                            <div class="row pt-3">
-                              <div class="col-md-6">
-                                <img src="assets/imgs/logo.png" alt="logo">
-                                  <h5 class="question pt-5"> Have a Project in mind ?</h5>
-                                  <h2 class="suggestion pb-3">Let's create something <br> amazing together...</h2>
-                                  <a href="#" class="btn btn-lg btn-outline-light rounded-pill k-ripple">Start a Project</a>
-                                  <div class="k-social mt-5">
-                                    <ul class="list-unstyled">
-                                      <li class="d-inline-block me-2">
-                                        <a href="#">
-                                          <img src="assets/imgs/instagram.svg" alt="instagram">
-                                        </a>
-                                      </li>
-                                      <li class="d-inline-block me-2">
-                                        <a href="#">
-                                          <img src="assets/imgs/facebook.svg" alt="facebook">
-                                        </a>
-                                      </li>
-                                      <li class="d-inline-block me-2">
-                                        <a href="#">
-                                          <img src="assets/imgs/Twitter.svg" alt="Twitter">
-                                        </a>
-                                      </li>
-                                      <li class="d-inline-block me-2">
-                                        <a href="#">
-                                          <img src="assets/imgs/Linkedin.svg" alt="Linkedin">
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                              </div>
-                              <div class="col-md-6 mt-5">
-                                <div class="k-menu">
-                                  <ul class="menu-hover-fill flex flex-col items-start leading-none text-2xl uppercase space-y-4">
-                                    <li><a href="#" data-text="Home">Home</a></li>
-                                    <li><a href="#" data-text="About Us">About Us</a></li>
-                                    <li><a href="#" data-text="Services">Services</a></li>
-                                    <li><a href="#" data-text="Blog">Blog</a></li>
-                                    <li><a href="#" data-text="Contact Us">Contact Us</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="off-bottom pt-3">
-                              <div class="TOS-PP d-flex justify-content-center">
-                                <a href="#" class="px-2">Terms of services</a>
-                                <a href="#" class="px-2">Privacy policy</a>
-                              </div>
-                              <div class="row text-center border-top border-secondary pt-3">
-                                <div class="col-md-2 col-sm-4">
-                                <ul class="list-unstyled">
-                                <li class="first"><strong>canada</strong></li>
-                                <li>140 Yonge St. #200<br> Toronto, ON | M5C 1X6</li>
-                                <li class="last">+1 647 643 7117</li>
-                                </ul>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                <ul class="list-unstyled">
-                                <li class="first"><strong>UK</strong></li>
-                                <li>71 - 75 Shelton Street<br>Covent Garden, United Kingdom - London</li>
-                                <li class="last">+44 20 3728 6554</li>
-                                </ul>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                <ul class="list-unstyled">
-                                <li class="first"><strong>UAE</strong></li>
-                                <li>103, Deyaar Building, 5,<br> 2a Street Al Barsha 1, DUBAI, UAE</li>
-                                 <li class="last">+971 56 895 7906</li>
-                                </ul>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                <ul class="list-unstyled">
-                                <li class="first"><strong>Qatar</strong></li>
-                                <li>AlShoumoukhTowers, Tower B<br> C-Ring Road, Doha, Qatar</li>
-                                <li class="last">+974 6686 1451</li>
-                                </ul>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                <ul class="list-unstyled">
-                                <li class="first"><strong>Libya</strong></li>
-                                <li>Khalil Complex, Omar Almokhtar str,<br> New area, Sabha, Libya</li>
-                                <li class="last">+21 8918 666 893</li>
-                                </ul>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                <ul class="list-unstyled">
-                                <li class="first"><strong>Egypt</strong></li>
-                                <li>13, 103 street<br>Maadi , Cairo , Egypt</li>
-                                <li class="last">+2 010000 589 28</li>
-                                </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                <div class="offcanvas-body p-0 text-white">
+                  <div
+                    class="container d-flex flex-column justify-content-between"
+                  >
+                    <div class="row pt-3">
+                      <div class="col-md-6">
+                        <img src="assets/imgs/logo.png" alt="logo" />
+                        <h5 class="question pt-5">Have a Project in mind ?</h5>
+                        <h2 class="suggestion pb-3">
+                          Let's create something <br />
+                          amazing together...
+                        </h2>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-lg btn-outline-light
+                            rounded-pill
+                            k-ripple
+                          "
+                          >Start a Project</a
+                        >
+                        <div class="k-social mt-5">
+                          <ul class="list-unstyled">
+                            <li class="d-inline-block me-2">
+                              <a href="#">
+                                <img
+                                  src="assets/imgs/instagram.svg"
+                                  alt="instagram"
+                                />
+                              </a>
+                            </li>
+                            <li class="d-inline-block me-2">
+                              <a href="#">
+                                <img
+                                  src="assets/imgs/facebook.svg"
+                                  alt="facebook"
+                                />
+                              </a>
+                            </li>
+                            <li class="d-inline-block me-2">
+                              <a href="#">
+                                <img
+                                  src="assets/imgs/Twitter.svg"
+                                  alt="Twitter"
+                                />
+                              </a>
+                            </li>
+                            <li class="d-inline-block me-2">
+                              <a href="#">
+                                <img
+                                  src="assets/imgs/Linkedin.svg"
+                                  alt="Linkedin"
+                                />
+                              </a>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                  <!-- menu end -->
+                      <div class="col-md-6 mt-5">
+                        <div class="k-menu">
+                          <ul
+                            class="
+                              menu-hover-fill
+                              flex flex-col
+                              items-start
+                              leading-none
+                              text-2xl
+                              uppercase
+                              space-y-4
+                            "
+                          >
+                            <li><a href="#" data-text="Home">Home</a></li>
+                            <li>
+                              <a href="#" data-text="About Us">About Us</a>
+                            </li>
+                            <li>
+                              <a href="#" data-text="Services">Services</a>
+                            </li>
+                            <li><a href="#" data-text="Blog">Blog</a></li>
+                            <li>
+                              <a href="#" data-text="Contact Us">Contact Us</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="off-bottom pt-3">
+                      <div class="TOS-PP d-flex justify-content-center">
+                        <a href="#" class="px-2">Terms of services</a>
+                        <a href="#" class="px-2">Privacy policy</a>
+                      </div>
+                      <div
+                        class="row text-center border-top border-secondary pt-3"
+                      >
+                        <div class="col-md-2 col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="first"><strong>canada</strong></li>
+                            <li>
+                              140 Yonge St. #200<br />
+                              Toronto, ON | M5C 1X6
+                            </li>
+                            <li class="last">+1 647 643 7117</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="first"><strong>UK</strong></li>
+                            <li>
+                              71 - 75 Shelton Street<br />Covent Garden, United
+                              Kingdom - London
+                            </li>
+                            <li class="last">+44 20 3728 6554</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="first"><strong>UAE</strong></li>
+                            <li>
+                              103, Deyaar Building, 5,<br />
+                              2a Street Al Barsha 1, DUBAI, UAE
+                            </li>
+                            <li class="last">+971 56 895 7906</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="first"><strong>Qatar</strong></li>
+                            <li>
+                              AlShoumoukhTowers, Tower B<br />
+                              C-Ring Road, Doha, Qatar
+                            </li>
+                            <li class="last">+974 6686 1451</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="first"><strong>Libya</strong></li>
+                            <li>
+                              Khalil Complex, Omar Almokhtar str,<br />
+                              New area, Sabha, Libya
+                            </li>
+                            <li class="last">+21 8918 666 893</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                          <ul class="list-unstyled">
+                            <li class="first"><strong>Egypt</strong></li>
+                            <li>13, 103 street<br />Maadi , Cairo , Egypt</li>
+                            <li class="last">+2 010000 589 28</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- menu end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="k-social k-social-top">
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a href="#">
+              <img src="assets/imgs/instagram.svg" alt="instagram" />
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="#">
+              <img src="assets/imgs/facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="#">
+              <img src="assets/imgs/Twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="#">
+              <img src="assets/imgs/Linkedin.svg" alt="Linkedin" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="owl-one owl-carousel">
+        <div class="k-slider1 text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <p class="services">
+                  Bdanding / web Design / Mobile App / Digital Marketing
+                </p>
+                <h1 class="title">
+                  agents of,<br />
+                  digital <br />
+                  transformation
+                </h1>
+                <p class="details">
+                  Branding and digital are forte. Given the state of the world,
+                  think, it’s time that we start.
+                </p>
+              </div>
+              <div class="col-md-7">
+                <img
+                  src="assets/imgs/slide1.png"
+                  alt="slider picture"
+                  class="k-float"
+                />
               </div>
             </div>
           </div>
-          </div>
-          <div class="k-social k-social-top">
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="#">
-                  <img src="assets/imgs/instagram.svg" alt="instagram">
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#">
-                  <img src="assets/imgs/facebook.svg" alt="facebook">
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#">
-                  <img src="assets/imgs/Twitter.svg" alt="Twitter">
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#">
-                  <img src="assets/imgs/Linkedin.svg" alt="Linkedin">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="owl-one owl-carousel">
-            <div class="k-slider1 text-white">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <p class="services">Bdanding / web Design / Mobile App / Digital Marketing</p>
-                    <h1 class="title">agents of,<br> digital <br> transformation</h1>
-                      <p class="details">Branding and digital are forte.  Given the state of the world, think, it’s time that we start.</p>
-                    </div>
-                    <div class="col-md-7">
-                      <img src="assets/imgs/slide1.png" alt="slider picture" class="k-float">
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="k-slider2 text-white">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <p class="services">Bdanding / web Design / Mobile App / Digital Marketing</p>
-                    <h1 class="title">agents of,<br> digital <br> transformation</h1>
-                      <p class="details">Branding and digital are forte.  Given the state of the world, think, it’s time that we start.</p>
-                    </div>
-                    <div class="col-md-7">
-                      <img src="assets/imgs/slide2.png" alt="slider picture" class="k-float">
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="k-slider3 text-white">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <p class="services">Bdanding / web Design / Mobile App / Digital Marketing</p>
-                    <h1 class="title">agents of,<br> digital <br> transformation</h1>
-                      <p class="details">Branding and digital are forte.  Given the state of the world, think, it’s time that we start.</p>
-                    </div>
-                    <div class="col-md-7">
-                      <img src="assets/imgs/slide3.png" alt="slider picture" class="k-float">
-                    </div>
-                  </div>
-                </div>
+        </div>
+        <div class="k-slider2 text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <p class="services">
+                  Bdanding / web Design / Mobile App / Digital Marketing
+                </p>
+                <h1 class="title">
+                  agents of,<br />
+                  digital <br />
+                  transformation
+                </h1>
+                <p class="details">
+                  Branding and digital are forte. Given the state of the world,
+                  think, it’s time that we start.
+                </p>
+              </div>
+              <div class="col-md-7">
+                <img
+                  src="assets/imgs/slide2.png"
+                  alt="slider picture"
+                  class="k-float"
+                />
+              </div>
             </div>
           </div>
+        </div>
+        <div class="k-slider3 text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <p class="services">
+                  Bdanding / web Design / Mobile App / Digital Marketing
+                </p>
+                <h1 class="title">
+                  agents of,<br />
+                  digital <br />
+                  transformation
+                </h1>
+                <p class="details">
+                  Branding and digital are forte. Given the state of the world,
+                  think, it’s time that we start.
+                </p>
+              </div>
+              <div class="col-md-7">
+                <img
+                  src="assets/imgs/slide3.png"
+                  alt="slider picture"
+                  class="k-float"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- hero End -->
 
     <!-- about us start -->
     <section class="about-us position-relative">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <h3 class="title line-after">About us</h3>
-                <p class="brief">
-                  We bring ideas to life by combining years of experiences of our very creative team.
-                </p>
-                  <div class="colored-line">
-                    <img src="assets/imgs/colored-line2.jpg" alt="line" width="100%">
-                  </div>
-                <p class="details">
-                  What started off as just our passion for digital marketing, has now grown on to become your renowned                and trusted digital transformation partner in the UK, US, Canada and MENA region.
-                </p>
-                <p class="details">
-                  With more than 20 years of expertise in 6 different locations over the world, Happenize has moved                 out of its box and now strives to offer bigger and better services and technologies to our clients.                 Accelerating your growth and building your success, Happenize is with you in every step.
-                </p>
-                <a href="#" class="btn btn-primary k-ripple mb-5"> Who we are</a>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="title line-after">About us</h3>
+            <p class="brief">
+              We bring ideas to life by combining years of experiences of our
+              very creative team.
+            </p>
+            <div class="colored-line">
+              <img
+                src="assets/imgs/colored-line2.jpg"
+                alt="line"
+                width="100%"
+              />
             </div>
+            <p class="details">
+              What started off as just our passion for digital marketing, has
+              now grown on to become your renowned and trusted digital
+              transformation partner in the UK, US, Canada and MENA region.
+            </p>
+            <p class="details">
+              With more than 20 years of expertise in 6 different locations over
+              the world, Happenize has moved out of its box and now strives to
+              offer bigger and better services and technologies to our clients.
+              Accelerating your growth and building your success, Happenize is
+              with you in every step.
+            </p>
+            <a href="#" class="btn btn-primary k-ripple mb-5"> Who we are</a>
+          </div>
         </div>
-        <div class="locations-pic d-none d-md-block position-absolute">
-          <img src="assets/imgs/images.jpg" alt="lanscapes images">
-        </div>
-        <div class="squares1 position-absolute k-float">
-          <img src="assets/imgs/squares.png" alt="lanscapes images">
-        </div>
-        <div class="squares2 position-absolute k-float">
-          <img src="assets/imgs/squares.png" alt="lanscapes images">
-        </div>
+      </div>
+      <div class="locations-pic d-none d-md-block position-absolute">
+        <img src="assets/imgs/images.jpg" alt="lanscapes images" />
+      </div>
+      <div class="squares1 position-absolute k-float">
+        <img src="assets/imgs/squares.png" alt="lanscapes images" />
+      </div>
+      <div class="squares2 position-absolute k-float">
+        <img src="assets/imgs/squares.png" alt="lanscapes images" />
+      </div>
     </section>
     <!-- about us end -->
 
@@ -264,53 +409,84 @@
     <section class="our-services text-center position-relative">
       <h3 class="title">our services</h3>
       <div class="colored-line m-auto">
-        <img src="assets/imgs/titleLine.png" alt="line" width="100%">
+        <img src="assets/imgs/titleLine.png" alt="line" width="100%" />
       </div>
       <p class="brief">
-        We’ve worked with big <br> and small alike.
+        We’ve worked with big <br />
+        and small alike.
       </p>
       <div class="container text-white">
         <div class="row justify-content-between">
           <div class="col-md-3 service">
-            <img src="assets/imgs/mobile-app.png" alt="mobile icon" class="mb-2">
+            <img
+              src="assets/imgs/mobile-app.png"
+              alt="mobile icon"
+              class="mb-2"
+            />
             <h4 class="mb-5">
-              Mobile <br> App
+              Mobile <br />
+              App
             </h4>
             <a href="#">
-              <img src="assets/imgs/mouse.png" alt="mouse icon" class="mouse k-ripple rounded-pill">
+              <img
+                src="assets/imgs/mouse.png"
+                alt="mouse icon"
+                class="mouse k-ripple rounded-pill"
+              />
             </a>
           </div>
           <div class="col-md-3 service">
-            <img src="assets/imgs/web-design.png" alt="mobile icon" class="mb-2">
-            <h4 class="mb-5">
-              Development
-            </h4>
+            <img
+              src="assets/imgs/web-design.png"
+              alt="mobile icon"
+              class="mb-2"
+            />
+            <h4 class="mb-5">Development</h4>
             <a href="#">
-              <img src="assets/imgs/mouse.png" alt="mouse icon" class="mouse k-ripple rounded-pill">
-            </a>
-            </div>
-          <div class="col-md-3 service">
-            <img src="assets/imgs/bullhorn.png" alt="mobile icon" class="mb-2">
-            <h4 class="mb-5">
-              Digital <br> Marketing
-            </h4>
-            <a href="#">
-              <img src="assets/imgs/mouse.png" alt="mouse icon" class="mouse k-ripple rounded-pill">
+              <img
+                src="assets/imgs/mouse.png"
+                alt="mouse icon"
+                class="mouse k-ripple rounded-pill"
+              />
             </a>
           </div>
           <div class="col-md-3 service">
-            <img src="assets/imgs/branding.png" alt="mobile icon" class="mb-2">
+            <img
+              src="assets/imgs/bullhorn.png"
+              alt="mobile icon"
+              class="mb-2"
+            />
             <h4 class="mb-5">
-              Branding
+              Digital <br />
+              Marketing
             </h4>
             <a href="#">
-              <img src="assets/imgs/mouse.png" alt="mouse icon" class="mouse k-ripple rounded-pill">
+              <img
+                src="assets/imgs/mouse.png"
+                alt="mouse icon"
+                class="mouse k-ripple rounded-pill"
+              />
+            </a>
+          </div>
+          <div class="col-md-3 service">
+            <img
+              src="assets/imgs/branding.png"
+              alt="mobile icon"
+              class="mb-2"
+            />
+            <h4 class="mb-5">Branding</h4>
+            <a href="#">
+              <img
+                src="assets/imgs/mouse.png"
+                alt="mouse icon"
+                class="mouse k-ripple rounded-pill"
+              />
             </a>
           </div>
         </div>
       </div>
       <div class="services-squares position-absolute k-float">
-        <img src="assets/imgs/ser-sq.png" alt="lanscapes images">
+        <img src="assets/imgs/ser-sq.png" alt="lanscapes images" />
       </div>
     </section>
     <!-- Our services end -->
@@ -319,35 +495,36 @@
     <section class="case-study text-center">
       <h3 class="title">Case Study</h3>
       <div class="colored-line m-auto mb-5">
-        <img src="assets/imgs/titleLine.png" alt="line" width="100%">
+        <img src="assets/imgs/titleLine.png" alt="line" width="100%" />
       </div>
       <div class="container-fluid text-white">
         <div class="row justify-content-between">
           <div class="col-md-4 case m-0 p-0">
-            <img src="assets/imgs/case1.png" alt="case study" width="100%">
+            <img src="assets/imgs/case1.png" alt="case study" width="100%" />
           </div>
           <div class="col-md-4 case m-0 p-0">
-            <img src="assets/imgs/case2.png" alt="case study" width="100%">
+            <img src="assets/imgs/case2.png" alt="case study" width="100%" />
           </div>
           <div class="col-md-4 case m-0 p-0">
-            <img src="assets/imgs/case3.png" alt="case study" width="100%">
+            <img src="assets/imgs/case3.png" alt="case study" width="100%" />
           </div>
           <div class="col-md-4 case m-0 p-0">
-            <img src="assets/imgs/case4.png" alt="case study" width="100%">
+            <img src="assets/imgs/case4.png" alt="case study" width="100%" />
           </div>
           <div class="col-md-4 case m-0 p-0">
-            <img src="assets/imgs/case5.png" alt="case study" width="100%">
+            <img src="assets/imgs/case5.png" alt="case study" width="100%" />
           </div>
           <div class="col-md-4 case m-0 p-0">
-            <img src="assets/imgs/case6.png" alt="case study" width="100%">
+            <img src="assets/imgs/case6.png" alt="case study" width="100%" />
           </div>
         </div>
       </div>
       <div class="container py-5">
         <div class="row">
-            <div class="projects-btn me-0 ms-auto">
-              <a href="#" class="text-black">See all projects</a> <img src="assets/imgs/arrow.svg" alt="arrow">
-            </div>
+          <div class="projects-btn me-0 ms-auto">
+            <a href="#" class="text-black">See all projects</a>
+            <img src="assets/imgs/arrow.svg" alt="arrow" />
+          </div>
         </div>
       </div>
     </section>
@@ -359,25 +536,34 @@
         <div class="row align-items-center">
           <div class="col-md-5 p-0 part1">
             <div class="colored-line d-flex col-12">
-              <img src="assets/imgs/chooseLinn.png" alt="line" width="100%">
+              <img src="assets/imgs/chooseLinn.png" alt="line" width="100%" />
             </div>
-            <img src="assets/imgs/choose-pic.png" alt="meeting image">
+            <img src="assets/imgs/choose-pic.png" alt="meeting image" />
           </div>
           <div class="col-md-7 part2">
             <h3 class="title">Why choose us</h3>
-            <p class="brief">Strategy-led  design <br>
-              in every detail</p>
-              <ol class="list-group list-group-numbered">
-                <li class="list-group-item">Analysis & Idea</li>
-                <li class="list-group-item">Design & Development</li>
-                <li class="list-group-item">Testing & Launch</li>
-              </ol>
-              <a href="#"><img src="assets/imgs/icon.svg" alt="play icon" class="play-icon k-ripple"> <span class="ps-3">View video</span></a>
+            <p class="brief">
+              Strategy-led design <br />
+              in every detail
+            </p>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">Analysis & Idea</li>
+              <li class="list-group-item">Design & Development</li>
+              <li class="list-group-item">Testing & Launch</li>
+            </ol>
+            <a href="#"
+              ><img
+                src="assets/imgs/icon.svg"
+                alt="play icon"
+                class="play-icon k-ripple"
+              />
+              <span class="ps-3">View video</span></a
+            >
           </div>
         </div>
       </div>
       <div class="squares3 position-absolute k-float">
-        <img src="assets/imgs/squares.png" alt="lanscapes images">
+        <img src="assets/imgs/squares.png" alt="lanscapes images" />
       </div>
     </section>
     <!-- why choose end -->
@@ -392,46 +578,71 @@
                 <div class="card mb-3 border-light bg-light">
                   <div class="row g-0 align-items-center">
                     <div class="col-md-4">
-                      <img src="assets/imgs/testimonial1.png" class="img-fluid rounded-start  m-auto" alt="clients">
+                      <img
+                        src="assets/imgs/testimonial1.png"
+                        class="img-fluid rounded-start m-auto"
+                        alt="clients"
+                      />
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
                         <h5 class="card-title">Peter Daniels</h5>
-                        <p class="card-text"><small class="text-muted">President / CEO Indesign Inc.</small></p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >President / CEO Indesign Inc.</small
+                          >
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <p class="test-tesxt">“ Behold you lesser our let seed there for and light great lights that seasons seasons  light second give midst. ”</p>
+                <p class="test-tesxt">
+                  “ Behold you lesser our let seed there for and light great
+                  lights that seasons seasons light second give midst. ”
+                </p>
                 <span class="slide-number">1 / 5</span>
               </div>
               <div class="k-slider bg-light py-3 px-5 rounded-1">
                 <div class="card mb-3 border-light bg-light">
                   <div class="row g-0 align-items-center">
                     <div class="col-md-4">
-                      <img src="assets/imgs/testimonial1.png" class="img-fluid rounded-start" alt="clients">
+                      <img
+                        src="assets/imgs/testimonial1.png"
+                        class="img-fluid rounded-start"
+                        alt="clients"
+                      />
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
                         <h5 class="card-title">Peter Daniels</h5>
-                        <p class="card-text"><small class="text-muted">President / CEO Indesign Inc.</small></p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >President / CEO Indesign Inc.</small
+                          >
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <p class="test-tesxt">“ Behold you lesser our let seed there for and light great lights that seasons seasons  light second give midst. ”</p>
+                <p class="test-tesxt">
+                  “ Behold you lesser our let seed there for and light great
+                  lights that seasons seasons light second give midst. ”
+                </p>
                 <span class="slide-number">2 / 5</span>
               </div>
             </div>
           </div>
-          <div class="col-md-6 part2 order-1 order-md-2 text-center text-md-start">
+          <div
+            class="col-md-6 part2 order-1 order-md-2 text-center text-md-start"
+          >
             <h3 class="title">Our clients</h3>
-      <div class="colored-line m-auto">
-        <img src="assets/imgs/titleLine.png" alt="line" width="40%">
-      </div>
-      <p class="brief">
-        We’ve worked with big <br> and small alike.
-      </p>
+            <div class="colored-line m-auto">
+              <img src="assets/imgs/titleLine.png" alt="line" width="40%" />
+            </div>
+            <p class="brief">
+              We’ve worked with big <br />
+              and small alike.
+            </p>
           </div>
         </div>
       </div>
@@ -442,120 +653,218 @@
     <!--  our clients  Section Start -->
     <section class="section our-clients position-relative" id="client">
       <div class="container-fluid">
-          <div class="row">
-              <div class="bubble-wrap">
-                  <div class="bubbles"></div>
-              </div>
-              <a href="#" class="btn btn-primary m-auto k-ripple"> Work with us</a>
+        <div class="row">
+          <div class="bubble-wrap">
+            <div class="bubbles"></div>
           </div>
+          <a href="#" class="btn btn-primary m-auto k-ripple"> Work with us</a>
+        </div>
       </div>
       <div class="squares4 position-absolute k-float">
-        <img src="assets/imgs/logos-aq.png" alt="lanscapes images">
+        <img src="assets/imgs/logos-aq.png" alt="lanscapes images" />
       </div>
-  </section>
-  <!--  our clients Section End -->
+    </section>
+    <!--  our clients Section End -->
 
-  <!-- awards start -->
-  <section class="awards text-white">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h3 class="title">Our Awards</h3>
-          <p class="brief">Darkness they're, moved whales great or void great man 
-            one man from blessed so our good face.</p>
+    <!-- awards start -->
+    <section class="awards text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3 class="title">Our Awards</h3>
+            <p class="brief">
+              Darkness they're, moved whales great or void great man one man
+              from blessed so our good face.
+            </p>
             <a href="#" class="btn btn-light mb-5 k-ripple"> Work with us</a>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="assets/imgs/Awards.png" alt="awards">
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/imgs/Awards.png" alt="awards" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- awards end -->
+    </section>
+    <!-- awards end -->
 
-  <!-- blog start -->
-  <section class="blog text-center">
-    <h3 class="title">blog</h3>
+    <!-- blog start -->
+    <section class="blog text-center">
+      <h3 class="title">blog</h3>
       <div class="colored-line m-auto">
-        <img src="assets/imgs/titleLine.png" alt="line" width="100%">
+        <img src="assets/imgs/titleLine.png" alt="line" width="100%" />
       </div>
       <div class="container text-start">
         <div class="row justify-content-around">
           <div class="col-md-4">
-            <div class="post d-flex flex-column justify-content-between position-relative">
+            <div
+              class="
+                post
+                d-flex
+                flex-column
+                justify-content-between
+                position-relative
+              "
+            >
               <div>
                 <p class="meta">16 Jan, 2021 / Design</p>
-              <h2 class="title">Behold you lesser 
-                our let seed.</h2>
+                <h2 class="title">Behold you lesser our let seed.</h2>
               </div>
-              <a href="#" class="text-black read-more">Read more
-                 <!-- <img src="assets/imgs/arrow.svg" alt="arrow"> -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21.238" height="21.299" viewBox="0 0 21.238 21.299">
-                    <path id="Path" class="cls-1" d="M15,5.469H3.563l5.25-4.375L7.5,0,0,6.25,7.5,12.5l1.313-1.094L3.563,7.031H15Z" transform="matrix(-0.695, 0.719, -0.719, -0.695, 20.227, 9.697)"/>
-                  </svg>
-                </a>
+              <a href="#" class="text-black read-more"
+                >Read more
+                <!-- <img src="assets/imgs/arrow.svg" alt="arrow"> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21.238"
+                  height="21.299"
+                  viewBox="0 0 21.238 21.299"
+                >
+                  <path
+                    id="Path"
+                    class="cls-1"
+                    d="M15,5.469H3.563l5.25-4.375L7.5,0,0,6.25,7.5,12.5l1.313-1.094L3.563,7.031H15Z"
+                    transform="matrix(-0.695, 0.719, -0.719, -0.695, 20.227, 9.697)"
+                  />
+                </svg>
+              </a>
               <div class="position-absolute post-layer"></div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="post d-flex flex-column justify-content-between position-relative">
+            <div
+              class="
+                post
+                d-flex
+                flex-column
+                justify-content-between
+                position-relative
+              "
+            >
               <div>
                 <p class="meta">16 Jan, 2021 / Design</p>
-              <h2 class="title">Behold you lesser 
-                our let seed.</h2>
+                <h2 class="title">Behold you lesser our let seed.</h2>
               </div>
-              <a href="#" class="text-black read-more">Read more
-                 <!-- <img src="assets/imgs/arrow.svg" alt="arrow"> -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21.238" height="21.299" viewBox="0 0 21.238 21.299">
-                    <path id="Path" class="cls-1" d="M15,5.469H3.563l5.25-4.375L7.5,0,0,6.25,7.5,12.5l1.313-1.094L3.563,7.031H15Z" transform="matrix(-0.695, 0.719, -0.719, -0.695, 20.227, 9.697)"/>
-                  </svg>
-                </a>
+              <a href="#" class="text-black read-more"
+                >Read more
+                <!-- <img src="assets/imgs/arrow.svg" alt="arrow"> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21.238"
+                  height="21.299"
+                  viewBox="0 0 21.238 21.299"
+                >
+                  <path
+                    id="Path"
+                    class="cls-1"
+                    d="M15,5.469H3.563l5.25-4.375L7.5,0,0,6.25,7.5,12.5l1.313-1.094L3.563,7.031H15Z"
+                    transform="matrix(-0.695, 0.719, -0.719, -0.695, 20.227, 9.697)"
+                  />
+                </svg>
+              </a>
               <div class="position-absolute post-layer"></div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="post d-flex flex-column justify-content-between position-relative">
+            <div
+              class="
+                post
+                d-flex
+                flex-column
+                justify-content-between
+                position-relative
+              "
+            >
               <div>
                 <p class="meta">16 Jan, 2021 / Design</p>
-              <h2 class="title">Behold you lesser 
-                our let seed.</h2>
+                <h2 class="title">Behold you lesser our let seed.</h2>
               </div>
-              <a href="#" class="text-black read-more">Read more
-                 <!-- <img src="assets/imgs/arrow.svg" alt="arrow"> -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21.238" height="21.299" viewBox="0 0 21.238 21.299">
-                    <path id="Path" class="cls-1" d="M15,5.469H3.563l5.25-4.375L7.5,0,0,6.25,7.5,12.5l1.313-1.094L3.563,7.031H15Z" transform="matrix(-0.695, 0.719, -0.719, -0.695, 20.227, 9.697)"/>
-                  </svg>
-                </a>
+              <a href="#" class="text-black read-more"
+                >Read more
+                <!-- <img src="assets/imgs/arrow.svg" alt="arrow"> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21.238"
+                  height="21.299"
+                  viewBox="0 0 21.238 21.299"
+                >
+                  <path
+                    id="Path"
+                    class="cls-1"
+                    d="M15,5.469H3.563l5.25-4.375L7.5,0,0,6.25,7.5,12.5l1.313-1.094L3.563,7.031H15Z"
+                    transform="matrix(-0.695, 0.719, -0.719, -0.695, 20.227, 9.697)"
+                  />
+                </svg>
+              </a>
               <div class="position-absolute post-layer"></div>
             </div>
           </div>
           <a href="#" class="btn btn-primary m-auto k-ripple"> Go to blog</a>
         </div>
       </div>
-  </section>
-  <footer class="text-white">
-    <div class="colored-line d-flex col-12">
-      <img src="assets/imgs/colored-line.jpg" alt="line" width="100%">
-    </div>
-    <div class="container f-con">
-      <div class="row">
-        <div class="col-md-5">
-          <img src="assets/imgs/logo.png" alt="" class="logo img-fluid mb-4">
+    </section>
+    <!-- blog end -->
+
+    <footer class="text-white">
+      <div class="colored-line d-flex col-12">
+        <img src="assets/imgs/colored-line.jpg" alt="line" width="100%" />
+      </div>
+      <div class="container f-con">
+        <div class="row">
+          <div class="col-md-5">
+            <img
+              src="assets/imgs/logo.png"
+              alt=""
+              class="logo img-fluid mb-4"
+            />
             <!-- <div class="address d-flex"><strong class="me-2">CANADA: </strong><address>140 Yonge St. #200 Toronto, ON | M5C 1X6 <br> <a href="tel:+16476437117">+1 647 643 7117</a></address></div>
             <div class="address d-flex"><strong class="me-2">UK: </strong><address>71 - 75 Shelton Street Covent Garden, United Kingdom - London <br> <a href="tel:+442037286554">+44 20 3728 6554</a></address></div>
             <div class="address d-flex"><strong class="me-2">UAE: </strong><address>103, Deyaar Building, 5, 2a Street Al Barsha 1, DUBAI, UAE <br> <a href="tel:+971568957906">+971 56 895 7906</a></address></div>
             <div class="address d-flex"><strong class="me-2">Qatar: </strong><address>AlShoumoukhTowers, Tower B C-Ring Road, Doha, Qatar <br> <a href="tel:+97466861451">+974 6686 1451</a></address></div>
             <div class="address d-flex"><strong class="me-2">Libya: </strong><address>Khalil Complex, Omar Almokhtar str, New area, Sabha, Libya <br> <a href="tel:+218918666893">+21 8918 666 893</a></address></div>
             <div class="address d-flex"><strong class="me-2">Egypt: </strong><address>13, 103 street Maadi , Cairo , Egypt <br> <a href="tel:+201000058928">+2 010000 589 28</a></address></div> -->
-            <div class="address d-flex"><strong class="me-1">CANADA: </strong><address>140 Yonge St. #200 Toronto, ON | M5C 1X6 <a href="tel:+16476437117">+1 647 643 7117</a></address></div>
-            <div class="address d-flex"><strong class="me-1">UK: </strong><address>71 - 75 Shelton Street Covent Garden, United Kingdom - London  <a href="tel:+442037286554">+44 20 3728 6554</a></address></div>
-            <div class="address d-flex"><strong class="me-1">UAE: </strong><address>103, Deyaar Building, 5, 2a Street Al Barsha 1, DUBAI, UAE  <a href="tel:+971568957906">+971 56 895 7906</a></address></div>
-            <div class="address d-flex"><strong class="me-1">Qatar: </strong><address>AlShoumoukhTowers, Tower B C-Ring Road, Doha, Qatar  <a href="tel:+97466861451">+974 6686 1451</a></address></div>
-            <div class="address d-flex"><strong class="me-1">Libya: </strong><address>Khalil Complex, Omar Almokhtar str, New area, Sabha, Libya  <a href="tel:+218918666893">+21 8918 666 893</a></address></div>
-            <div class="address d-flex"><strong class="1">Egypt: </strong><address>13, 103 street Maadi , Cairo , Egypt <a href="tel:+201000058928">+2 010000 589 28</a></address></div>
-        </div>
-        <div class="col-md-7">
-          <div class="row">
+            <div class="address d-flex">
+              <strong class="me-1">CANADA: </strong>
+              <address>
+                140 Yonge St. #200 Toronto, ON | M5C 1X6
+                <a href="tel:+16476437117">+1 647 643 7117</a>
+              </address>
+            </div>
+            <div class="address d-flex">
+              <strong class="me-1">UK: </strong>
+              <address>
+                71 - 75 Shelton Street Covent Garden, United Kingdom - London
+                <a href="tel:+442037286554">+44 20 3728 6554</a>
+              </address>
+            </div>
+            <div class="address d-flex">
+              <strong class="me-1">UAE: </strong>
+              <address>
+                103, Deyaar Building, 5, 2a Street Al Barsha 1, DUBAI, UAE
+                <a href="tel:+971568957906">+971 56 895 7906</a>
+              </address>
+            </div>
+            <div class="address d-flex">
+              <strong class="me-1">Qatar: </strong>
+              <address>
+                AlShoumoukhTowers, Tower B C-Ring Road, Doha, Qatar
+                <a href="tel:+97466861451">+974 6686 1451</a>
+              </address>
+            </div>
+            <div class="address d-flex">
+              <strong class="me-1">Libya: </strong>
+              <address>
+                Khalil Complex, Omar Almokhtar str, New area, Sabha, Libya
+                <a href="tel:+218918666893">+21 8918 666 893</a>
+              </address>
+            </div>
+            <div class="address d-flex">
+              <strong class="1">Egypt: </strong>
+              <address>
+                13, 103 street Maadi , Cairo , Egypt
+                <a href="tel:+201000058928">+2 010000 589 28</a>
+              </address>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="row">
               <div class="col-md-4 f-links">
                 <h4 class="title">Quick Links</h4>
                 <ul class="list-unstyled">
@@ -602,39 +911,49 @@
                   <ul class="list-unstyled">
                     <li class="d-inline-block me-2">
                       <a href="#">
-                        <img src="assets/imgs/instagram.svg" alt="instagram">
+                        <img src="assets/imgs/instagram.svg" alt="instagram" />
                       </a>
                     </li>
                     <li class="d-inline-block me-2">
                       <a href="#">
-                        <img src="assets/imgs/facebook.svg" alt="facebook">
+                        <img src="assets/imgs/facebook.svg" alt="facebook" />
                       </a>
                     </li>
                     <li class="d-inline-block me-2">
                       <a href="#">
-                        <img src="assets/imgs/Twitter.svg" alt="Twitter">
+                        <img src="assets/imgs/Twitter.svg" alt="Twitter" />
                       </a>
                     </li>
                     <li class="d-inline-block me-2">
                       <a href="#">
-                        <img src="assets/imgs/Linkedin.svg" alt="Linkedin">
+                        <img src="assets/imgs/Linkedin.svg" alt="Linkedin" />
                       </a>
                     </li>
                   </ul>
                 </div>
-                <p class="copyRight">©  2021 Happenize LLC. <br> All rights reserved.</p>
+                <p class="copyRight">
+                  © 2021 Happenize LLC. <br />
+                  All rights reserved.
+                </p>
               </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-  </footer>
-  <!-- blog end -->
+    </footer>
+    <!-- blog end -->
     <!-- clients end -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="assets/js/zepto.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/library.min.js"></script>
