@@ -2,10 +2,14 @@ $(document).ready(function(){
     // Contact Page
     $('li').click(function(){
         $('#'+$(this).data('addr')).siblings('span').hide();
-        // $('#'+$(this).data('addr')).siblings('span').css('visibility', 'none');
         $('#'+$(this).data('addr')).show();
-        // $('#'+$(this).data('addr')).css('visibility', 'visibile')
         $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+    })
+    $('.industries-boxes .industry-box').click(function(){
+        $('#'+$(this).data('id')).siblings('.industries-box-info').hide();
+        $('#'+$(this).data('id')).show();
+        $('.industry-box').removeClass('active');
         $(this).addClass('active');
     })
     $('.owl-one').owlCarousel({

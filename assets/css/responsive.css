@@ -12,6 +12,12 @@
     .contact-info .contact-info-text > div ul{
         max-width: 300px;
     }
+    .case-studies .case > img {
+        height: 350px;
+    }
+    .about-services .brief{
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 991px) {
     .navbar-toggler i{
@@ -40,18 +46,43 @@
     .contact-form-container{
         margin-top: 25px;
     }
+    .main-nav .navbar-collapse{
+        background-color: #fff;
+        box-shadow: 1px 2px 5px rgb(0 0 0 / 20%);
+        border-radius: 0 0 5px 5px;
+    }
+    .main-nav ul{
+        padding-inline-start: 10px;
+    }
+    .accordion-img img{
+        margin-top: 25px;
+        height: unset;
+    }
+    .about-services .brief{
+        width: 100%;
+    }
+    /* .industries-box-info .industry-img{
+        margin-bottom: 25px;
+    } */
+    .about-quote .title {
+        font-size: 26px;
+    }
+    .about-quote .title {
+        font-size: 23px;
+    }
+    .about-video .title{
+        font-size: 20px;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     header{
         height: 450px;
     }
-    .main-nav ul{
-        box-shadow: 1px 2px 5px rgb(0 0 0 / 20%);
-        border-radius: 0 0 5px 5px;
-        padding-inline-start: 10px;
-    }
     .contact-info .contact-info-text > div ul{
         max-width: 300px;
+    }
+    .case-studies .case > img {
+        height: 260px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -62,9 +93,56 @@
         padding-top: 60px;
     }
     header .header-text h2 {
-        font-size: 50px;
+        font-size: 33px;
+    }
+    .breadcrumb-item a {
+        font-size: 14px;
     }
     header .k-social {
         top: 45%;
+    }
+    .main-contact-information h3 {
+        font-size: 24px;
+    }
+    .main-contact-information .brief {
+        font-size: 15px;
+    }
+    .case-studies .case > div > div{
+        font-size: 20px;
+    }
+    .get-started .title{
+        font-size: 22px;
+    }
+    .get-started .brief{
+        font-size: 15px;
+    }
+    .case-studies .case > img {
+        height: 320px;
+    }
+    .industries-box-info .industry-text .industry-logos img {
+        margin-inline-end: 30px;
+    }
+    .case-single-accordion-body p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .industries-box-info .industry-text p{
+        font-size: 16px;
+    }
+    .trusted-clients .trusted-clients-logo img{
+        height: 140px;
+        width: 140px;
+    }
+    .about-quote .title,
+    .about-industries .title,
+    .about-services .title {
+        font-size: 18px;
+        letter-spacing: 2.31px;
+    }
+    .buckets p {
+        width: 100%;
+    }
+    .about-video a{
+        margin-bottom: 25px;
     }
 }
