@@ -148,22 +148,51 @@ body{
  .hero .TOS-PP a:hover{
      color: #fff;
  }
-.hero .services{
-    letter-spacing: 1px;
-    line-height: 16px;
-    margin-top: 107px;
-    margin-bottom: 8px;
-}
-.hero .title{
+.hero .Branding-Digital-M {
+    margin: 0 0 14px;
+    font-size: 14px;
+    letter-spacing: 2.15px;
+    padding-top: 137px;
+    font-weight: normal;
+    width: 120%;
+  }
+.hero .GET-INSPIRED {
     font-size: 70px;
-    line-height: 84px;
-    margin-bottom: 8px;
-}
-.hero .details{
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  .hero .TO-BE-TRANSFORMED-DI {
+    font-size: 32px;
+    font-weight: normal;
+  }
+.hero .We-bring-ideas-to-li {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+.no-webp .hero .owl-carousel .k-slider1{
+    background-image: url(../imgs/hero-bg.jpg);
 }
-.hero .owl-carousel .k-slider1,.hero .owl-carousel .k-slider2,.hero .owl-carousel .k-slider3{
+.webp .hero .owl-carousel .k-slider1{
+    background-image: url(../imgs/hero-bg.webp);
+}
+.hero .owl-carousel .k-slider1{
+    background-size: cover;
+    padding-top: 163px;
+    padding-bottom: 140px;
+}
+@media (max-width:768px){
+    .hero .Branding-Digital-M{
+        width: 100%;
+    }
+    .hero .owl-carousel .k-slider1{
+        padding-top: 70px;
+    }
+  }
+/* .hero .owl-carousel .slide1-img{
+    width: 561px;
+} */
+/* .hero .owl-carousel .k-slider1,.hero .owl-carousel .k-slider2,.hero .owl-carousel .k-slider3{
     background-image: linear-gradient(
         270deg
         ,#26011F , #600060);
@@ -179,7 +208,7 @@ body{
     background-image: linear-gradient(
         270deg
         ,#39C55E , #09551E);
-}
+} */
 .hero .owl-carousel .owl-dots{
     transform: translateY(-132px);
 }
@@ -263,6 +292,7 @@ body{
 /* about-us start */
 .about-us{
     padding-top: 96px;
+    padding-bottom: 87px;
     overflow: hidden;
 }
 .about-us .title,.our-services .title,.case-studies .title,.get-started .title,.blog .title{
