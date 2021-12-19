@@ -111,7 +111,7 @@ body{
 }
 .hero .offcanvas-start{
     width: 100%;
-    background-color: #000;
+    background-image: linear-gradient(90deg,#600060 50%,#26011f 100%);
 }
 .hero .offcanvas-body .container{
     height: 100vh;
@@ -128,26 +128,64 @@ body{
      top: 20px;
      right: 20px;
  }
- .hero .close-icon:hover{
-     animation: rotate 1s;
+ .hero .btn-close:hover{
+     transition: 500ms;
+     opacity: 1;
  }
  .hero .btn-close:focus{
      box-shadow:0 0 0 0
  }
  .hero .question{
-     color: greenyellow;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--coral-pink);
+ }
+ .hero .suggestion{
+    font-size: 47px;
+    line-height: 1.17;
+    color: var(--white);
+    font-weight: normal;
  }
  .hero .rounded-pill{
      transition: .5s;
  }
- .hero .TOS-PP a{
-     color: #7f8c8d;
-     text-decoration: none;
-     transition: .5s;
- }
- .hero .TOS-PP a:hover{
-     color: #fff;
- }
+ .hero .k-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.hero .k-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  .hero .k-menu ul::before{
+    content: "";
+    background-image: url(../imgs/V-colored-line.jpg);
+    height: 95%;
+    width: 4px;
+    position: absolute;
+    background-size: contain;
+    left: -15px;
+  }
+  .hero .k-menu a {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.85;
+    color: #fff;
+    text-decoration: none;
+  }
+.off-bottom .first{
+    font-size: 16px;
+    color: #fffffe;
+}
+.off-bottom .second{
+    font-size: 10px;
+    color: #fffffe;
+}
+  /* menu end */
 .hero .Branding-Digital-M {
     margin: 0 0 14px;
     font-size: 14px;
@@ -242,7 +280,7 @@ body{
 /* .hero .owl-carousel button.owl-dot:nth-child(4).active{
     background: #34A853;
 } */
-.hero .k-social{
+.k-social{
     position: absolute;
     z-index: 9;
     right: 25px;
@@ -268,7 +306,7 @@ body{
     animation: lineAnmi 4s linear infinite ;
 }
 .hero .offcanvas-body .k-social{
-    position: static;
+    top: 40%;
 }
 .k-social img{
     transition: all .5s;
@@ -465,7 +503,7 @@ body{
     top: 25px;
     bottom: 25px;
     padding: 15px;
-    background-color: #4285f4c7;
+    background-color: #e25962c7;
     border-radius: 5px;
     font-size: 24px;
     font-weight: 600;
