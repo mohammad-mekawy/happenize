@@ -483,8 +483,8 @@ body{
 }
 .case-studies .case > img{
     height: 460px;
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
+    /* filter: grayscale(1); */
+    /* -webkit-filter: grayscale(1); */
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -745,7 +745,12 @@ background-color: rgb(107 29 88 / 84%);
 }
 .blog .title{
     font-size: 26px;
-    line-height: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: var(--colors-color-101010);
     transition: all .5s;
 }
 .blog .read-more{
@@ -794,7 +799,96 @@ background-color: rgb(107 29 88 / 84%);
     animation: rotate 1s; 
 }
 /* blog end */
-
+/* Start Main Get Started Form */
+.main-get-started{
+    padding-block: 90px;
+    background-color: #f5f5f5;
+}
+.main-get-started .title{
+    color: #6B1D58;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.main-get-started .brief{
+    font-size: 22px;
+    font-weight: normal;
+}
+.main-get-started textarea,
+.main-get-started input[type="text"]{
+    box-shadow:  0 2px 7px 0 rgba(0, 0, 0, 0.09);
+    border: 0;
+}
+.main-get-started input{
+    height: 60px;
+}
+.main-get-started input[type="submit"]{
+    background: #6b1d58;
+    border: 1px solid #6B1D58;
+    color: #fff;
+    height: 60px;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.main-get-started input[type="submit"]:hover{
+    background: #fff;
+    color: #6B1D58;
+}
+/* End Main Get Started Form */
+/* Start Main Contact Information */
+.main-contact-information{
+    padding-block: 60px;
+}
+.main-contact-information h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #6B1D58;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.main-contact-information .brief{
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 45px;
+}
+.main-contact-information .main-info-box h5{
+    font-size: 19px;
+    font-weight: 600;
+    color: #6B1D58;
+    margin-bottom: 10px;
+}
+.main-contact-information .main-info-box p,
+.main-contact-information .main-info-box a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+.main-contact-information .main-info-box strong{
+    color: #555;
+}
+.main-contact-information .main-info-box a i{
+    font-size: 22px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.main-contact-information .main-info-box a i:hover{
+    color: #6B1D58;
+}
+/* End Main Contact Information */
 /* Start Footer */
 .main-footer{
     background: #6b1d58;

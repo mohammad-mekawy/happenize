@@ -27,6 +27,16 @@ header.contact-header{
 header.case-header{
     background: url('../imgs/contact/case.webp');
 }
+.webp header.blog-header{
+    background: url('../imgs/blog/blog-hero.webp');
+}
+.no-webp header.blog-header{
+    background: url('../imgs/blog/blog-hero.jpg');
+}
+header.blog-header{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 header.about-header{
     background: linear-gradient(to bottom, #000, 24%, rgba(212, 66, 246, 0) 97%),url('../imgs/about/bitmap.webp');
     /* background: linear-gradient(to bottom, #000, rgba(212, 66, 244, 0) 94%),url('../imgs/about/bitmap.webp'); */
