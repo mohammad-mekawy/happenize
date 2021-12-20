@@ -438,17 +438,18 @@ strong {
     font-weight: bold;
     letter-spacing: 4.31px;
     color: var(--white);
+    text-transform: uppercase;
   }
 .our-services  .We-are-committed-to {
-    font-size: 21px;
-    line-height: 1.52;
+    font-size: 16px;
     color: var(--white);
-    margin-bottom: 55px;
+    line-height: 2;
+    margin-bottom: 30px;
   }
  .our-services .We-Design-Digital-Pr {
-    font-size: 33px;
+    font-size: 19px;
     font-weight: 600;
-    line-height: 1.48;
+    line-height: 2.11;
     color: var(--white);
   }
 .our-services .colored-line,.case-study .colored-line,.blog .colored-line{
@@ -758,12 +759,10 @@ background-color: rgb(107 29 88 / 84%);
     text-transform: uppercase;
   }
 .Great-things-are-nev {
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 600;
-    line-height: 1.43;
-    text-align: center;
+    line-height: 2.11;
     color: var(--white);
-    padding: 30px 10px;
   }
   .our-team .btn-light {
     background-color: #f8f9fa;
