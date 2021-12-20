@@ -143,7 +143,7 @@ strong {
     background-image: linear-gradient(90deg,#600060 50%,#26011f 100%);
 }
 .hero .offcanvas-body .container{
-    height: 100vh;
+    min-height: 100vh;
 }
 .hero .offcanvas-header{
     position: absolute;
@@ -488,7 +488,7 @@ strong {
     padding: 5px;
   }
   .our-services .service.red:hover  {
-    background-color: var(--orangered);
+    background-color: #6C1D58;
   }
   .our-services .service.blue:hover  {
     background-color: var(--dodger-blue);
@@ -521,10 +521,23 @@ strong {
     bottom: 10px;
     background-color: #4285f4c7;
 }
+.case-studies .case div.pink{
+background-color: #FD5C63c7;
+}
+.case-studies .case div.blue{
+background-color: #4285F4c7;
+}
+.case-studies .case div.green{
+background-color: #34A853c7;
+}
+.case-studies .case div.yellow{
+background-color: #FBBC05c7;
+}
+.case-studies .case div.purple{
+background-color: #6C1D58c7;
+}
 .case-studies .case > img{
     height: 460px;
-    /* filter: grayscale(1); */
-    /* -webkit-filter: grayscale(1); */
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
