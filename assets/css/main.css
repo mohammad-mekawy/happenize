@@ -485,8 +485,19 @@ strong {
     justify-content: space-evenly;
   }
   .our-services .service:hover  {
-    background-color: var(--dodger-blue);
     padding: 5px;
+  }
+  .our-services .service.red:hover  {
+    background-color: var(--orangered);
+  }
+  .our-services .service.blue:hover  {
+    background-color: var(--dodger-blue);
+  }
+  .our-services .service.yellow:hover  {
+    background-color: var(--marigold);
+  }
+  .our-services .service.green:hover  {
+    background-color: var(--medium-green);
   }
 
 .our-services .services-squares{
@@ -685,6 +696,7 @@ padding-top: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 .trusted-clients .trusted-clients-logo .trusted-logo:hover{
     border-color: var(--grape-purple)
