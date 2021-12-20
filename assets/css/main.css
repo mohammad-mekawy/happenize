@@ -489,7 +489,7 @@ strong {
     padding: 5px;
   }
   .our-services .service.red:hover  {
-    background-color: #6C1D58;
+    background-color: #FD5C63;
   }
   .our-services .service.blue:hover  {
     background-color: var(--dodger-blue);
