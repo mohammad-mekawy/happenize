@@ -63,7 +63,7 @@
               <a
                 data-bs-toggle="offcanvas"
                 href="#offcanvasExample"
-                role="button"
+                type="button"
                 aria-controls="offcanvasExample"
                 class="menu-btn"
               >
@@ -74,7 +74,7 @@
                 class="offcanvas offcanvas-start"
                 tabindex="-1"
                 id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel"
+                aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true" data-bs-backdrop="false"
               >
                 <div class="offcanvas-header justify-content-end">
                   <button
@@ -150,7 +150,7 @@
                           >
                             <li><a href="/happenize/about.html">About	</a></li>
                             <li><a href="#">Clients</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="#k-ser" id="ser1">Services</a></li>
                             <li><a href="/happenize/case.html">Case Studies</a></li>
                             <li><a href="/happenize/team.html">Team</a> </li>
                             <li><a href="#">Blogs</a> </li>
@@ -398,7 +398,7 @@ Tower B, C-Ring, DOHA.
     <!-- about us end -->
 
     <!-- Our services start -->
-    <section class="our-services text-center position-relative">
+    <section class="our-services text-center position-relative"  id="k-ser">
       <h3 class="Services-we-provide">Services we provide</h3>
       <div class="colored-line m-auto">
         <img src="assets/imgs/titleLine.png" alt="line" width="100%" />
@@ -1306,5 +1306,21 @@ Tower B, C-Ring, DOHA.
     <!-- <script src="assets/js/paralex.min.js"></script> -->
     <!-- <script src="https://cdn.rawgit.com/josephg/noisejs/master/perlin.js"></script> -->
     <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+  var myOffcanvas = document.getElementById('offcanvasExample');
+  var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+  document.getElementById("OpenMenu").addEventListener('click',function (e){
+    e.preventDefault();
+    e.stopPropagation();
+    bsOffcanvas.toggle();
+  });
+});
+      $("#ser1").click(function(){
+        $('.offcanvas-backdrop').removeClass('show')
+        $('.offcanvas-start').removeClass('show')
+        $(".offcanvas-start").css("visibility","hidden")
+      })
+    </script>
   </body>
 </html>
