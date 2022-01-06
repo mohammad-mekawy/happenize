@@ -1,0 +1,146 @@
+.hero .btn-light{
+    transition: all 500ms;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 38px;
+}
+.hero .btn-light:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.contact-form-container{
+    box-shadow: inset 0px 0px 5px 1px #fff;
+    padding: 30px 25px;
+    border: 1.5px solid;
+    border-radius: 2px;
+}
+.SCHEDULE-A-FREE-CONS {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.42;
+  }
+  .Chat-live-with-us-or {
+    font-size: 12px;
+    font-weight: 600;
+  }
+.contact-form-container label{
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 1rem;        
+}
+.contact-form-container input{
+    border-color: #d5dae2;
+}
+.contact-form-container input[type="submit"]{
+    background: #fd5c63;
+    border: 1px solid #fd5c63;
+    color: #fff;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: 500;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.contact-form-container input[type="submit"]:hover{
+    background: #fff;
+    color: #f65314;
+}
+
+
+/* tech logos */
+.We-specialize-in-all {
+    margin: 0px 0 73.7px 0;
+    font-size: 21px;
+    line-height: 1.52;
+    color: #525252;
+}
+/* Expectations */
+.Expectations{
+    background-color: #6b1d58;
+}
+.expect-box{
+    padding: 25px 15px;
+    border-radius: 4px;
+    margin-bottom: 35px;
+    border: 2px solid transparent;
+    transition: 500ms;
+}
+.expect-box:hover{
+    border: 2px solid;
+    background: #00000030;
+    transform: translateY(-5px);
+}
+.expect-box h4{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 11.11px;
+    margin-bottom: 15px;
+}
+.expect-box .Fast-turnaround-time {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #d9d9d9;
+    transition: 500ms;
+  }
+.expect-box:hover .Fast-turnaround-time {
+    color: #fff;
+  }
+
+  /* trusted */
+  .We-lay-down-a-solid {
+    font-size: 21px;
+    line-height: 1.95;
+    color: #333;
+  }
+  /* Newsletters */
+  .Newsletters{
+      background-color: #f5f5f5;
+      padding: 100px 0;
+  }
+  .Stay-in-the-know {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.31;
+    letter-spacing: 1.2px;
+    color: #6b1d58;
+  }
+  .Join-our-mailing-lis {
+    font-size: 17px;
+    line-height: 1.59;
+    letter-spacing: 0.6px;
+    color: #333;
+  }
+  .Newsletters input{
+      width: 80%;
+      border-radius: 4px;
+      box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+      background-color: #fff;
+      height: 45px;
+  }
+  .Newsletters input:focus{
+      outline: 0;
+  }
+  .Newsletters button{
+      right: 10%;
+      height: 83%;
+    padding: 0px 10px;
+    background: #6b1d58;
+    margin-top: 3px;
+    border-radius: 4px;
+    color: #fff;
+    transition: 500ms;
+  }
+  .Newsletters button:hover{
+      transform: scale(1.1);
+  }
