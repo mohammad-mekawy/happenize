@@ -1,3 +1,35 @@
+:root {
+  --dodger-blue: #4285f4;
+  --orangered: #f65314;
+  --marigold: #fb0;
+  --medium-green: #34a853;
+  --grape-purple: #6b1d58;
+  --coral-pink: #fd5c63;
+  --dark-lime-green: #7cbb00;
+  --colors-color-101010: #101010;
+  --gray: #afafaf;
+  --blue: #6454dd;
+  --pink: #e184bd;
+  --white: #fff;
+  --black: #333;
+  --young-brown: #e1b582;
+  --sickly-yellow: #b5dd2b;
+  --06-white: #fff;
+  --05-gray-light: #dce4e7;
+  --04-gray: #949799;
+  --03-dark: #000;
+  --01-primary: #000;
+  --colors-color-bcbcbc: #bcbcbc;
+  --colors-color-f-5-f-5-f-5: #f5f5f5;
+  --colors-color-232323: #232323;
+  --hovers-hover-bg-2: rgba(16, 16, 16, 0.3);
+  --colors-color-525252: #525252;
+  --colors-color-d-6-d-6-d-6: #d6d6d6;
+  --bg-opasity-bg-opacity-40: rgba(16, 16, 16, 0.4);
+  --colors-color-8-a-8-a-8-a: #8a8a8a;
+  --primary: #40bca8;
+  --01-colors-01-main-secondary: #fff;
+}
 .hero .btn-light{
     transition: all 500ms;
     width: 200px;
@@ -144,3 +176,100 @@
   .Newsletters button:hover{
       transform: scale(1.1);
   }
+
+  /* PPC */
+  .title small{
+    font-size: 23px;
+    letter-spacing: 0px;
+    font-weight: 600;
+  }
+  .people-showing-thumbs-up {
+    width: 326px;
+  height: 378px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 40px;
+  }
+  .Tailored-Strategy {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.67;
+    color: var(--marigold);
+    transition: all 500ms;
+  }
+  .Deep-Dive{
+    color: var(--dodger-blue);
+  }
+  .All-inclusive,.Budget-Control{
+    color: var(--coral-pink);
+  }
+  .Analysis{
+    color: var(--grape-purple);
+  }
+  .Transparent-Pricing{
+    color: var(--medium-green);
+  }
+  .We-build-a-tailored {
+    font-family: OpenSans;
+    font-size: 15px;
+    line-height: 1.67;
+    color: #000;
+    transition: all 500ms;
+  }
+  .Services .service  {
+    transition: 500ms;
+    margin-bottom: 35px;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+  }
+  @media (min-width: 768px){
+    .Services .service{
+      max-width: 30%;
+    }
+  }
+
+  .Services .Service-con{
+      display: block;
+    border-radius: 4px;
+    border: solid 1px #fffefe;
+    text-decoration: none;
+    transition: 500ms;
+    padding: 32px;
+  }
+  .Services .service  {
+    padding: 12px;
+    border-radius:4px ;
+  }
+  .Services .service:hover h4,.Services .service:hover p {
+    color: var(--white);
+  }
+  .Services .service.red:hover  {
+    background-color: #FD5C63;
+  }
+  .Services .service.blue:hover  {
+    background-color: var(--dodger-blue);
+  }
+  .Services .service.yellow:hover  {
+    background-color: var(--marigold);
+  }
+  .Services .service.green:hover  {
+    background-color: var(--medium-green);
+  }
+  .Services .service.purple:hover  {
+    background-color: var(--grape-purple);
+  }
+
+.Services .services-squares{
+    bottom: -45px;
+    left: 130px;
+}
+.G-ser1,.G-ser2{
+  top: 60%;
+}
+.G-ser1{
+  right: 0;
+}
+.G-ser2{
+  left: 0;
+}

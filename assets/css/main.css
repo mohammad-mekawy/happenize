@@ -440,7 +440,7 @@ strong {
     padding-bottom: 87px;
     overflow: hidden;
 }
-.about-us .title,.our-services .title,.case-studies .title,.get-started .title,.blog .title,.tech-logos .title, .Expectations .title{
+.about-us .title,.our-services .title,.case-studies .title,.get-started .title,.blog .title,.tech-logos .title, .Expectations .title, .Services .title{
     color: var(--grape-purple);
     font-size: 28px;
     font-weight: bold;
@@ -856,9 +856,9 @@ background-color: rgb(107 29 88 / 84%);
     background-image: url(../imgs/post-hover.webp);
 }
 .blog .post{
-    padding: 48px 50px;
-    height: 326px;
-    width: 335px;
+    padding: 20px 15px;
+    height: 400px;
+    /* width: 335px; */
     margin: 50px 0px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -869,7 +869,7 @@ background-color: rgb(107 29 88 / 84%);
 .blog .meta{
     font-size: 16px;
     line-height: 19px;
-    color: #fff;
+    /* color: #fff; */
 }
 .blog .title{
     font-size: 26px;
@@ -881,13 +881,13 @@ background-color: rgb(107 29 88 / 84%);
     color: var(--colors-color-101010);
     transition: all .5s;
 }
-.blog .meta + .title{
+/* .blog .meta + .title{
     color: #fff;
-}
+} */
 .blog .read-more{
     font-size: 18px;
     line-height: 22px;
-    color: #fff !important;
+    /* color: #fff !important; */
     text-decoration: none;
     transition: all .5s;
 }
@@ -912,7 +912,7 @@ background-color: rgb(107 29 88 / 84%);
     color: #fff !important;
 }
 .blog .cls-1 {
-    fill: #fff;
+    /* fill: #fff; */
     transition: all .5s;
   }
   .blog .post:hover .cls-1 {

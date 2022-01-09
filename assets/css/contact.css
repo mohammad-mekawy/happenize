@@ -978,6 +978,9 @@ header .k-social{
     text-align: justify;
     margin-bottom: 30px;
   }
+  .post .content a{
+      color: var(--grape-purple);
+  }
   .post img{
       width: 100%;
   }
