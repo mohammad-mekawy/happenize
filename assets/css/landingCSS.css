@@ -99,7 +99,18 @@
 }
 /* Expectations */
 .Expectations{
-    background-color: #6b1d58;
+  background-size: cover;
+  background-position: center center;
+  padding: 60px 0;
+}
+.no-webp .Expectations{
+    background-image: url(../imgs/LP/seo-ser-bg.jpg);
+}
+.webp .Expectations{
+    background-image: url(../imgs/LP/seo-ser-bg.webp);
+}
+.DM{
+  background-color: #6b1d58;
 }
 .expect-box{
     padding: 25px 15px;
@@ -216,6 +227,7 @@
     line-height: 1.67;
     color: #000;
     transition: all 500ms;
+    padding-top: 30px;
   }
   .Services .service  {
     transition: 500ms;
@@ -232,14 +244,19 @@
   .Services .Service-con{
       display: block;
     border-radius: 4px;
-    border: solid 1px #fffefe;
+    border: solid 3px #fffefe;
     text-decoration: none;
     transition: 500ms;
-    padding: 32px;
+    padding: 40px;
+    height: 274px;
   }
   .Services .service  {
     padding: 12px;
     border-radius:4px ;
+  }
+  .Services .service img{
+    top: 10px;
+    right: 10px;
   }
   .Services .service:hover h4,.Services .service:hover p {
     color: var(--white);
