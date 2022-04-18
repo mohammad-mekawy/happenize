@@ -103,26 +103,25 @@
 }
 .sticky-icons{
   position: fixed;
-  right: -135px;
+  right: 5px;
   z-index: 999999999999999999;
   top: 65%;
   list-style: none;
 }
 .sticky-icons li{
   background: #34a853;
-  border-right: 3px solid #fff;
   transition: all 500ms;
+  border-radius: 50%;
 }
 .sticky-icons a{
   color: #fff;
 }
 .sticky-icons img{
-  background: linear-gradient(90deg, #34a853 27%, #34a853 94%);
   height: 35px;
   padding: 8px;
 }
 .sticky-icons li:hover{
-  transform: translateX(-135px);
+  transform: translatey(-5px);
 }
 /* tech logos */
 .We-specialize-in-all {
