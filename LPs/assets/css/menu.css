@@ -1,0 +1,28 @@
+.hero .k-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.hero .k-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  .hero .k-menu ul::before{
+    content: "";
+    background-image: url(../imgs/V-colored-line.jpg);
+    height: 95%;
+    width: 4px;
+    position: absolute;
+    background-size: contain;
+    left: -15px;
+  }
+  .hero .k-menu a {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.85;
+    color: #fff;
+    text-decoration: none;
+  }
