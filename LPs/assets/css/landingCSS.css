@@ -109,7 +109,7 @@
   list-style: none;
 }
 .sticky-icons li{
-  background: #fd5c63;
+  background: #34a853;
   border-right: 3px solid #fff;
   transition: all 500ms;
 }
@@ -117,7 +117,7 @@
   color: #fff;
 }
 .sticky-icons img{
-  background: linear-gradient(90deg, rgba(253,92,99,1) 27%, rgba(246,83,20,1) 94%);
+  background: linear-gradient(90deg, #34a853 27%, #34a853 94%);
   height: 35px;
   padding: 8px;
 }
