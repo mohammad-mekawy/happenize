@@ -428,6 +428,13 @@
 .get-started .contact-info{
   margin-top: 70px;
 }
+@media (min-width:786px) {
+  .F-border{
+    border: 1px solid;
+    padding: 85px 30px;
+    margin: -140px 0;
+  }
+}
 /* Start Single Case Study Page */
 .case-single .title{
   font-weight: 600;
