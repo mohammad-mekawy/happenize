@@ -346,7 +346,7 @@
       left: 130px;
   }
   .G-ser1,.G-ser2{
-    top: 40%;
+    top: 41%;
   }
   .G-ser1{
     right: 0;
@@ -452,7 +452,6 @@
   }
   @media (min-width:786px) {
     .F-border{
-      border: 2px solid #6B1D58;
       padding: 40px 30px;
     }
   }
